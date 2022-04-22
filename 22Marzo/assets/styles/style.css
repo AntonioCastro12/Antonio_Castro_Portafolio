@@ -1,0 +1,156 @@
+html{
+    box-sizing: border-box;
+}
+
+* {
+    box-sizing: inherit;
+    padding: 0;
+    margin: 0;
+}
+
+.content-row, 
+.content-row-reverse, 
+.content-colum, 
+.content-colum-reverse,
+.content-child {
+    display: flex;
+    background-color: lavender;
+    padding: 1rem;
+    height: 600px;
+
+    
+}
+
+.content-row{
+    flex-direction: row;
+}
+
+
+.content-row-reverse {
+    flex-direction: row-reverse;
+
+}
+
+.content-colum{
+    flex-direction: column;
+}
+
+.content-colum-reverse{
+    flex-direction: column-reverse;
+}
+
+.content-row > *,
+.content-row-reverse > *,
+.content-colum > * ,
+.content-colum-reverse > *{ 
+    width: 100px;
+    height: 100px;
+    padding: 2rem;
+    background-color: cornflowerblue;
+    margin: .5rem;
+    font-size: 2rem;
+
+}
+.content-child > *{
+    width: 50px;
+    height: 50px;
+    padding: 1rem;
+    background-color: plum;
+}
+
+
+.justify-content{
+    justify-content: flex-start;
+    justify-content: flex-end;
+    justify-content: center;
+    justify-content: space-between;
+    justify-content: space-around;
+    justify-content: space-evenly;
+}
+
+.aling-items{
+    align-items:  flex-start;
+    align-items: flex-end;
+    align-items: center;
+}
+
+.order {
+    flex-direction: column;
+}
+
+.order > div:nth-child(1){
+    order: 2;
+}
+
+.order > div:nth-child(2){
+    order: 1;
+}
+.order > div:nth-child(3){
+    order: 3;
+}
+
+.order > div:nth-child(4){
+    order: -1;
+}
+
+.order > div:nth-child(5){
+    order: 4;
+}
+
+
+.grow > div:nth-child(1){
+    flex-grow: 1;
+}
+
+.grow > div:nth-child(2){
+    flex-grow: 2;
+}
+
+.grow > div:nth-child(3){
+    flex-grow: 1;
+}
+
+.shrink > *{
+    width: 100%;
+}
+
+.shrink > div:nth-child(1){
+    flex-shrink: 10;
+}
+
+.shrink > div:nth-child(2){
+    flex-shrink: 10;
+}
+
+.shrink > div:nth-child(3){
+    flex-shrink: 10;
+}
+
+.align-self{
+    height: 400px;
+    /*flex-direction: column;*/
+}
+
+.content-child.align-self > *{
+    height: auto;
+    width: auto;
+}
+
+.align-self > div:nth-child(1){
+    align-self: flex-start;
+}
+
+.align-self > div:nth-child(2){
+    align-self: flex-end;
+}
+
+.align-self > div:nth-child(3){
+    align-self: center;
+}
+.align-self > div:nth-child(4){
+    align-self: baseline;
+}
+
+.align-self > div:nth-child(5){
+    align-self: stretch;
+}

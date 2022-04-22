@@ -1,0 +1,103 @@
+
+.w-25 {
+    width: 25vw;
+}
+
+p{
+    background-color: coral;
+    height: 10rem;
+    margin: 0;
+}
+
+span{
+    background-color: dodgerblue;
+}
+
+
+.d-block{
+    display: block;
+}
+
+.d-inline{
+    display: inline;
+}
+
+
+
+.contenedor{
+    border: 1px solid black;
+
+}
+
+.d-block{
+    display: block;
+}
+
+.d-inline{
+    display: inline;
+}
+
+.contenedor *{
+    width: 10rem;
+    height: 4rem;
+}
+
+.d-block{
+    display: block;
+}
+
+.d-inline{
+    display: inline;
+}
+
+.d-inline-block{
+    display: inline-block
+}
+
+.d-none{
+    display: none;
+}
+
+.v-hidden{
+    visibility: hidden;
+}
+
+
+.box-model-element{
+    
+    /*
+    
+    padding-top: 50px;
+    padding-right: 100px;
+    padding-bottom: 20px;
+    padding-left: 80px;
+    */
+    border: 30px solid royalblue;
+    padding: 50px;
+    /*
+    margin-top: 10px;
+    margin-right: 40px;
+    margin-bottom: 50px;
+    margin-left: 30px;
+
+    
+
+    margin: 10px 40px 50px 30px;
+    margin: 30px 50px;
+    margin: 50px
+    */
+
+    margin: 50px;
+
+    width: 300px;
+    height: 500px;
+    
+    box-sizing: border-box;
+ 
+    overflow: scroll;
+
+}
+
+.box-model-element::-webkit-scrollbar{
+    display: none;
+}

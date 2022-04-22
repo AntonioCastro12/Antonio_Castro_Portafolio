@@ -1,0 +1,47 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    padding: 1rem;
+}
+
+.contenedor{
+    border: 3px dashed black;
+    padding: 1rem;
+    position: relative;
+}
+/*
+.position{
+    height: 5rem;
+    background-color: palevioletred;
+    border: 1px solid purple;
+    margin: 1rem 0;
+    opacity: .5;
+
+    position: relative;
+    top: 3rem;
+    right: 5rem;
+
+
+    position: absolute;
+    width: 200px;
+    top: 0;
+
+
+    position: fixed;
+    width: 100vw;
+    top: -1.5rem;
+    left: 0;
+    
+}
+*/
+
+@media screen and (min-width: 600px){
+        body{
+            background-color: red;
+        }
+}

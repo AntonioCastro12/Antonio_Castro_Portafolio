@@ -1,0 +1,44 @@
+h2{
+    background-color: brown;
+}
+
+h2{
+    background-color: cyan  ;
+}
+
+
+/*
+    SELECTORES
+    menor jerarquia --> mayor jerarquia
+
+    Universal 
+    *{
+        propiedad:valor;
+    }
+    Permite seleccionar TODOS los elementos
+
+
+    Etiqueta / tagname
+    nombre-elemento{
+        propiedad:valor;
+    }
+    Permite seleccionar a todos los ellementos de un solo tipo
+
+
+    Clase / classname
+    .clase{
+        propiedad: valor; 
+    }
+
+
+    Atributo
+    [atributo]{
+        propiedad:valor;
+    }
+
+    Identificador / id
+    #identificadoor{
+        propiedad: valor;
+    }
+
+*/

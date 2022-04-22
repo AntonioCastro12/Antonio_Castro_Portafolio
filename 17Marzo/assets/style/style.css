@@ -1,0 +1,103 @@
+
+section > span{
+    color: crimson;
+}
+
+section > p > span {
+    color: darkblue;
+}
+
+section span{
+    border: 3px solid darkblue;
+} 
+
+.item~li{
+    background-color: darkslateblue ;
+}
+
+
+.item + li{
+    background-color: rgb(201, 63, 63);
+}
+
+button:hover{
+    background-color: brown;
+    color: #ffffff;
+}
+
+button:focus{
+    background-color: aqua;
+}
+
+.enlace.visited{
+    color: crimson;
+}
+
+
+.lista2 > li:first-child{
+    color:darkblue;
+}
+
+.lista2 > div:last-child{
+    background-color: crimson;
+}
+
+.lista2 > li:nth-child(5){
+    text-decoration: underline;
+}
+
+.lista2 > li:nth-child(even){
+    background-color: dodgerblue;
+}
+
+.lista2 > li:nth-child(odd){
+    background-color: rgb(121, 34, 34);
+}
+
+.lista2 > li:nth-child(3n){
+    font-weight: bold;
+}
+
+a [target="_blank"]::after{
+    content: "↗️";
+}
+
+.lista2 >li::before{
+    content: ">>";
+}
+
+.lista2 > div:first-of-type::first-letter{
+    font-size: 30px;
+    font-weight: bold;
+    color: cadetblue;
+    text-decoration: underline;
+} 
+
+input::placeholder{
+    font-size: 12px;
+    color: deepskyblue;
+}
+
+.u-px{
+    border: 1px solid tomato;
+    width: 200px;
+    height: 100px;
+}
+
+.u-rem{
+    border: 1px solid tomato;
+    width: 10rem;
+    height: 3rem;
+}
+
+.u-vw{
+    border: 1px solid tomato;
+    width: 50vw;
+    height: 200px;
+}
+
+.u-vh{
+    border: 1px solid tomato;
+    width: 50vh;
+    height: 25vh;
+}

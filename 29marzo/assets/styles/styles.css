@@ -1,0 +1,92 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: .5rem 1.25rem;
+    background-color: brown;
+  
+}
+
+nav > label >img{
+    width: 20px;
+}
+
+input#menu-hamburguesa{
+    visibility: hidden;
+}
+
+input#menu-hamburguesa ~ ul{
+    background-color: whitesmoke;
+    list-style: none;
+    position: absolute;
+    width: 100%;
+    height: calc( 100vh - 55px );
+    top: 80px;
+    right: 100%;
+    transition: all 300ms linear;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+    padding: 2rem 1rem;
+}
+
+input#menu-hamburguesa:checked ~ ul{
+    right: 0;
+}
+
+.card{
+    position: relative;
+}
+
+.second-image{
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: opacity 1s linear;
+}
+
+.second-image:hover{
+    opacity: 0;
+    cursor: pointer;
+}
+
+
+@media only screen and ( min-width: 600px ){
+    label{
+        display: none;
+    }
+
+    input#menu-hamburguesa ~ ul{
+        position: static;
+        background-color: transparent;
+        display: flex;
+        flex-direction: row;
+        height: auto;
+        justify-content: flex-end;
+        transition: none;
+    }
+
+    nav > ul > li{
+        display: inline-block;
+        /*margin-left: 1rem;*/
+    }
+    
+    nav > ul > li > a{
+        color: #ffffff;
+        text-decoration: none;
+        padding: .5rem 1rem;
+        border-bottom: 2px solid transparent;
+        transition: border-color .3s linear;
+    }
+    
+    nav > ul > li > a:hover{
+        border-color: #fbb13c;
+    }
+}
